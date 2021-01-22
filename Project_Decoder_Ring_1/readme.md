@@ -1,8 +1,17 @@
-# Decoder Ring
+# Project: Decoder Ring
 
-> This project is for anyone who loves escape rooms and puzzles. This application includes three algorithms that will help you encode and decode all kinds of fun messages? Use it to build your own puzzles, to add a twist to your scavenger hunt, or just to send a secret message. Enjoy!
+> You're planning a surprise birthday party for one of your friends who _loves_ escape rooms and puzzles. What better way to practice your new coding skills than to build an application that will help you encode and decode all kinds of fun messages?
 
 ![Home view of Decoder Ring](./docs/home.png)
+
+This project is designed to test your ability to build complex algorithms as well as write unit tests with Mocha & Chai to test your algorithms. Before taking on this module, you should be comfortable with the learning objectives listed below. You will not need to make any edits to HTML or CSS for this project.
+
+## Learning Objectives
+
+This project will assess the following key learning objectives:
+
+- Write a series of unit tests using Mocha & Chai.
+- Use different `expect()` methods to test your code.
 
 ## Project setup
 
@@ -24,6 +33,21 @@ npm start
 ```
 
 To stop the server and regain control of your terminal, you can press `Ctrl + C`.
+
+## Instructions
+
+You are tasked with building functions for an application that will either encode or decode a string using a variety of ciphers. For each cipher, you should make a series of tests using Mocha & Chai to confirm that your cipher works.
+
+All of the functions can be found inside of the `src/` directory, and the corresponding test files can be found in `tests/`. Each function and cipher is described below.
+
+Below is a checklist of what you need to accomplish.
+
+- [ ] Complete the `caesar()` function.
+- [ ] Write tests for the `caesar()` function.
+- [ ] Complete the `polybius()` function.
+- [ ] Write tests for the `polybius()` function.
+- [ ] Complete the `substitution()` function.
+- [ ] Write tests for the `substitution()` function.
 
 ### Caesar Shift
 
@@ -47,7 +71,7 @@ The `caesar()` function in the `src/caesar.js` file has three parameters:
 - _shift_ is an integer refers to how much each letter is "shifted" by. A positive number means shifting to the right (i.e. "A" becomes "D") whereas a negative number means shifting to the left (i.e. "M" becomes "K").
 - _encode_ is a boolean that refers to whether you should encode or decode the message. By default, it is set to `true`.
 
-Keep the following constraints and rules in mind:
+When building the function, keep the following constraints and rules in mind:
 
 - If the `shift` value is not present, equal to `0`, less than `-25`, or greater than `25`, the function should return `false`.
 - Spaces in the message should be maintained before and after encoding or decoding, as should other non-alphabetic symbols.
@@ -96,7 +120,7 @@ The `polybius()` function in the `src/polybius.js` file has two parameters:
 - _input_ is a string that refers to the inputted text to be encoded or decoded.
 - _encode_ is a boolean that refers to whether you should encode or decode the message. By default it is set to `true`.
 
-Keep the following constraints and rules in mind:
+When building the function, keep the following constraints and rules in mind:
 
 - You are welcome to assume that _no additional symbols will be included as part of the input._ Only spaces and letters will be included.
 - When encoding, your output should _still be a string._
@@ -139,7 +163,7 @@ The `substitution()` function in the `src/substitution.js` file has three parame
 - _alphabet_ is a string that refers to substitution alphabet.
 - _encode_ is a boolean that refers to whether you should encode or decode the message. By default, it is set to `true`.
 
-Keep the following constraints and rules in mind:
+When building the function, keep the following constraints and rules in mind:
 
 - You are welcome to assume that _no additional symbols will be included as part of the input._ Only spaces and letters will be included.
 - Spaces in the message should be maintained before and after encoding or decoding.
